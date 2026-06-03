@@ -380,7 +380,7 @@ function init(){
   sm.addEventListener("change",()=>{meseCorrente=+sm.value;render();});
   // Anno
   const sa=document.getElementById("selAnno");
-  [2024,2025,2026,2027].forEach(y=>{const o=document.createElement("option");o.value=y;o.textContent=y;if(y===annoCorrente)o.selected=true;sa.appendChild(o);});
+  [2026,2027].forEach(y=>{const o=document.createElement("option");o.value=y;o.textContent=y;if(y===annoCorrente)o.selected=true;sa.appendChild(o);});
   sa.addEventListener("change",()=>{annoCorrente=+sa.value;render();});
   // Cat select
   const ic=document.getElementById("inpCategoria");
